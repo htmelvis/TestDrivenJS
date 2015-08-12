@@ -20,11 +20,10 @@
     console.log('   a. Walk over to integration box');
     console.log('   b. git pull');
     console.log('   c. jake');
+    console.log('   d. if jake fails start over');
     console.log('3. Git checkout integration');
     console.log('4. git merge master --no-ff --log');
     console.log('5. git checkout master');
-
-
 
     console.log('Integration Logic Goes Here!');
   });
