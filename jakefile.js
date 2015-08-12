@@ -13,7 +13,21 @@
 
     lint.run(files.toArray(), nodeLintOptions(), {});
   });
+  desc("Integrate");
+  task("integrate", ['default'], function(){
+    console.log('1. Make sure git status is clean');
+    console.log('2. Build on integration box');
+    console.log('   a. Walk over to integration box');
+    console.log('   b. git pull');
+    console.log('   c. jake');
+    console.log('3. Git checkout integration');
+    console.log('4. git merge master --no-ff --log');
+    console.log('5. git checkout master');
 
+
+
+    console.log('Integration Logic Goes Here!');
+  });
   function nodeLintOptions() {
     return {
       bitwise: true,
