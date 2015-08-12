@@ -1,9 +1,8 @@
-task('default', [], function(){
-  console.log('default');
-})
-
-desc('Hey example');
+task('default', ["lint"]);
+desc("Lint everything");
 //task("nameoftask", [deps], callback());
-task('example', function(){
-  console.log('example task');
+task('lint',[], function(){
+  var lint = require('./build/lint/lint_runner.js');
+  //files, options, globals
+  lint.run(['jakefile.js'], {}, {});
 });
